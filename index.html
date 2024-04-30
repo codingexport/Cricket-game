@@ -140,7 +140,7 @@
     }
     function showMsg(userMove, ComputerMove, resultMSg) {
       localStorage.setItem('Score', JSON.stringify(score));
-      document.getElementById('user-move').innerText = userMove !== undefined ? `User chosen ${userMove}` : '';
+      document.getElementById('user-move').innerText = userMove !== undefined ? `You chosen ${userMove}` : '';
       document.getElementById('computer-move').innerText = ComputerMove !== undefined ? `Computer chosen ${ComputerMove}` : '';
       document.getElementById('result').innerText = resultMSg !== undefined ? `${resultMSg}` : 'Reset Game';
       document.getElementById('score').innerText = ` ${score.displayScore()}`;
